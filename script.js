@@ -35,7 +35,6 @@ window.onscroll = () => {
     // -----remove toggle icon and navbar when click navbar link (scroll)----
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
-
 };
 
 // -----scroll reveal----
@@ -51,9 +50,15 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
 
+// Tambahan untuk animasi skills muncul dari kiri
+ScrollReveal().reveal('.skills-box', { 
+    origin: 'left', 
+    interval: 150 
+});
+
 // -----typed js----
 const typed = new Typed('.multiple-text', {
-    strings: ['Backend Developer','Fullstack Developer','Design 3D'],
+    strings: ['Backend Developer','Frontend Developer','Fullstack Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 100,
