@@ -230,6 +230,18 @@ span {
     margin-bottom: 1rem;
 }
 
+.skills-box i,
+.skills-box .iconify {
+    font-size: 6rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    display: inline-block;
+    line-height: 1; /* bantu meratakan vertikal */
+    vertical-align: middle;
+    height: 6rem; /* tambahkan ini untuk menyamakan tinggi */
+    width: 6rem;  /* jaga proporsi */
+}
+
 .skills-box h3 {
     font-size: 2rem;
     color: var(--text-color);
