@@ -313,11 +313,13 @@ span {
 
 .projects-layer h4 {
     font-size: 3rem;
+    color: var(--bg-color);
 }
 
 .projects-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
+    color: var(--bg-color);
 }
 
 .projects-layer a {
@@ -332,6 +334,97 @@ span {
 
 .projects-layer a i {
     font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+.section-divider {
+    width: 30%;
+    height: 0.3rem;
+    background: var(--main-color);
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* ================= VIDEO CONTENT ================= */
+.video-content h2 {
+    margin-bottom: 4rem;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.video-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    width: 100%;
+    max-width: 65rem; 
+    height: 35rem; 
+    display: flex;
+}
+
+.video-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.video-box:hover img {
+    transform: scale(1.1);
+}
+
+.video-box .video-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .4), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.video-box:hover .video-layer {
+    transform: translateY(0);
+}
+
+.video-layer h4 {
+    font-size: 3rem;
+    color: var(--bg-color);
+}
+
+.video-layer p {
+    font-size: 1.6rem;
+    margin: 1rem 0 2rem;
+    color: var(--bg-color);
+}
+
+.video-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    background: var(--text-color);
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.video-layer a i {
+    font-size: 3rem;
     color: var(--second-bg-color);
 }
 
